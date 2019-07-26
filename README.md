@@ -1,25 +1,16 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # railsgirls-app
+Rails Girls App Tutorial
+https://guides.railsgirls.com/app
+
+# 動作環境
+- Ruby 2.6.3
+- Ruby on Rails 5.2.3
+- sqlite3 1.4.1
+
+# Docker環境セットアップ
+```
+$ docker-compose build
+$ docker-compose run --rm railsgirls bundle exec rails db:create
+$ docker-compose run --rm railsgirls bundle exec rails db:migrate
+$ docker-compose up
+```
